@@ -1,10 +1,10 @@
-##########################################
+###########################################
 # DESCRIPTION:
 # Counts the number of lines and chars in the text file
 #
 # Example:
 # countlines.py file.txt
-##########################################
+###########################################
 
 from sys import argv
 
