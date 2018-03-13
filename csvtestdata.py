@@ -1,9 +1,11 @@
+#########################################
 # DESCRIPTION:
 # Creates CSV file with random test data.
 #
 # Usage example:
 # csvtestdata.py test.csv 10
 # csvtestdata.py -h for more options
+#########################################
 
 import argparse
 from faker import Faker
