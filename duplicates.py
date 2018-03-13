@@ -12,23 +12,23 @@
 import collections
 
 
-def delete_nth(list, n):
+def delete_nth(l, n):
     duples_count = collections.Counter()
 
-    for value in list:
+    for value in l:
         duples_count[value] += 1
 
     duples_list = [key for key in duples_count.keys() if duples_count[key] > 1]
 
-    reverse_list = list[::-1]
+    reverse_list = l[::-1]
 
     for key in duples_list:
         for i in range(duples_count[key] - n):
             reverse_list.remove(key)
 
-    list = reverse_list[::-1]
+    l = reverse_list[::-1]
 
-    print("Final list: ", list)
+    print("Final list: ", l)
 
 
 if __name__ == "__main__":
